@@ -17,8 +17,13 @@ y=4
 
 print("Sum of two numbers is {}".format(x+y))
 
+
 #creating pandas DataFrame
 import pandas as pd
+
+ab = pd.DataFrame()
+if ab.shape[0]== 0:
+	print("Empty")
 
 data=pd.DataFrame.from_dict(data={'A':{0:1,1:2,2:3},
                              'B':{0:3,1:4,2:5},
